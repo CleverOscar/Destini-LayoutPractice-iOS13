@@ -22,9 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        storyLabel.text = storyBrain.getStory()
-        choiceOne.setTitle(storyBrain.choice1(), for: .normal)
-        choiceTwo.setTitle(storyBrain.choice2(), for: .normal)
+        updateUI()
     }
     
     
@@ -32,11 +30,24 @@ class ViewController: UIViewController {
     
     @IBAction func choiceMade(_ sender: UIButton) {
         
-        let userAnswer = sender.currentTitle;
+        let userAnswer = sender.currentTitle!
+        let checkAnswer = storyBrain.nextStory(userChoice: userAnswer)
         
+        if (checkAnswer != 0) {
+                    sender.backgroundColor = UIColor.green
+                    
+        } else {
+                    sender.backgroundColor = UIColor.red
+        }
         
-      
+        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+    }
+    
+    @objc func updateUI() {
         
+        storyLabel.text = storyBrain.getStory()
+        choiceOne.setTitle(storyBrain.choice1(), for: .normal)
+        choiceTwo.setTitle(storyBrain.choice2(), for: .normal)
     }
 
     
