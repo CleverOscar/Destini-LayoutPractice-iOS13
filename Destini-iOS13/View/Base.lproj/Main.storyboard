@@ -62,20 +62,21 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="199.66666666666666"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vry-pn-bCt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="199.66666666666666"/>
+                                                        <rect key="frame" x="147.33333333333334" y="84.333333333333371" width="79.333333333333343" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Choice 1"/>
+                                                        <connections>
+                                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIX-1e-WAi"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="aVR-4f-HcV" secondAttribute="bottom" id="4ab-yw-CK4"/>
-                                                    <constraint firstItem="aVR-4f-HcV" firstAttribute="leading" secondItem="5CN-aV-oY1" secondAttribute="leading" id="AGN-S2-WLa"/>
-                                                    <constraint firstItem="Vry-pn-bCt" firstAttribute="top" secondItem="5CN-aV-oY1" secondAttribute="top" id="Fs6-Lb-Dni"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Vry-pn-bCt" secondAttribute="trailing" id="IHN-OS-OFN"/>
-                                                    <constraint firstAttribute="trailing" secondItem="aVR-4f-HcV" secondAttribute="trailing" id="bFg-VF-sQ4"/>
-                                                    <constraint firstItem="Vry-pn-bCt" firstAttribute="leading" secondItem="5CN-aV-oY1" secondAttribute="leading" id="uDC-g0-qtA"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Vry-pn-bCt" secondAttribute="bottom" id="wEt-xC-qTo"/>
-                                                    <constraint firstItem="aVR-4f-HcV" firstAttribute="top" secondItem="5CN-aV-oY1" secondAttribute="top" id="yXm-81-oqj"/>
+                                                    <constraint firstItem="aVR-4f-HcV" firstAttribute="top" secondItem="5CN-aV-oY1" secondAttribute="top" id="1W4-AT-RXe"/>
+                                                    <constraint firstItem="Vry-pn-bCt" firstAttribute="centerY" secondItem="5CN-aV-oY1" secondAttribute="centerY" id="GCH-WY-YAg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aVR-4f-HcV" secondAttribute="trailing" id="eq9-gv-3L8"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aVR-4f-HcV" secondAttribute="bottom" id="jKz-Nh-R96"/>
+                                                    <constraint firstItem="Vry-pn-bCt" firstAttribute="centerX" secondItem="5CN-aV-oY1" secondAttribute="centerX" id="k3O-9x-4ps"/>
+                                                    <constraint firstItem="aVR-4f-HcV" firstAttribute="leading" secondItem="5CN-aV-oY1" secondAttribute="leading" id="kV7-Jp-Rub"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXy-pf-zkp" userLabel="Choice 2 View">
@@ -85,20 +86,21 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="199.33333333333334"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-qn-hxt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="199.33333333333334"/>
+                                                        <rect key="frame" x="146.33333333333334" y="84" width="81.333333333333343" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Choice 2"/>
+                                                        <connections>
+                                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="smL-XV-x5s"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="CQJ-gf-Amf" firstAttribute="top" secondItem="bXy-pf-zkp" secondAttribute="top" id="2Gq-8k-vdl"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ZhO-qn-hxt" secondAttribute="bottom" id="4Go-cg-dsl"/>
-                                                    <constraint firstItem="ZhO-qn-hxt" firstAttribute="leading" secondItem="bXy-pf-zkp" secondAttribute="leading" id="7XE-wj-PxI"/>
-                                                    <constraint firstAttribute="trailing" secondItem="CQJ-gf-Amf" secondAttribute="trailing" id="8hj-Rk-GsE"/>
-                                                    <constraint firstAttribute="bottom" secondItem="CQJ-gf-Amf" secondAttribute="bottom" id="XvM-02-E69"/>
-                                                    <constraint firstItem="CQJ-gf-Amf" firstAttribute="leading" secondItem="bXy-pf-zkp" secondAttribute="leading" id="beM-Ee-W9K"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ZhO-qn-hxt" secondAttribute="trailing" id="lgu-eD-C5D"/>
-                                                    <constraint firstItem="ZhO-qn-hxt" firstAttribute="top" secondItem="bXy-pf-zkp" secondAttribute="top" id="xQL-pp-OsT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CQJ-gf-Amf" secondAttribute="trailing" id="2ji-Sn-w4m"/>
+                                                    <constraint firstItem="ZhO-qn-hxt" firstAttribute="centerY" secondItem="bXy-pf-zkp" secondAttribute="centerY" id="63Z-ZP-wRh"/>
+                                                    <constraint firstItem="CQJ-gf-Amf" firstAttribute="top" secondItem="bXy-pf-zkp" secondAttribute="top" id="DQX-1k-bD7"/>
+                                                    <constraint firstItem="ZhO-qn-hxt" firstAttribute="centerX" secondItem="bXy-pf-zkp" secondAttribute="centerX" id="IYu-Ht-ebc"/>
+                                                    <constraint firstItem="CQJ-gf-Amf" firstAttribute="leading" secondItem="bXy-pf-zkp" secondAttribute="leading" id="TT3-Is-c91"/>
+                                                    <constraint firstAttribute="bottom" secondItem="CQJ-gf-Amf" secondAttribute="bottom" id="fx5-MC-M8i"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
